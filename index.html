@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reel Estate Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Reel Estate Lab főoldal">
+        <span class="brand-mark">R</span>
+        <span>Reel Estate Lab</span>
+      </a>
+      <nav class="nav" aria-label="Fő navigáció">
+        <a href="#home">Főoldal</a>
+        <a href="#demo">Demo</a>
+        <a href="#csomag">Hogyan működik</a>
+        <a href="#kinalat">Mit nyújt?</a>
+        <a href="#arak">Árak</a>
+        <a class="nav-cta" href="#kapcsolat">Kapcsolat</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Reel Estate Lab</p>
+          <h1>Gyorsabb válasz. Tisztább leadkezelés. Több megtekintés.</h1>
+          <p class="lead">
+            Egy egyszerű AI asszisztens, ami összegyűjti az érdeklődőket, válaszjavaslatot ír,
+            teendőt hoz létre, és versenyelőnyt ad azokkal szemben, akik még kézzel, lassan kezelik a leadeket.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo">Demo kipróbálása</a>
+            <a class="button secondary" href="#kapcsolat">Megkereső szöveg</a>
+          </div>
+          <div class="time-stats" aria-label="Időmegtakarítás">
+            <div>
+              <strong>3-6 óra</strong>
+              <span>becsült heti admin időnyereség</span>
+            </div>
+            <div>
+              <strong>5-8 perc</strong>
+              <span>spórolható egy egyszerű leaden</span>
+            </div>
+          </div>
+          <div class="proof-strip" aria-label="Fő jellemzők">
+            <span>1 hét alatt indulhat</span>
+            <span>Heti 3-6 óra admin spórolható</span>
+            <span>Gyorsabb reakció, több esély megtekintésre</span>
+          </div>
+        </div>
+
+        <div class="product-shot" aria-label="AI leadkezelő rendszer előnézet">
+          <div class="shot-topbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="shot-layout">
+            <aside class="shot-sidebar">
+              <strong>Lead OS</strong>
+              <span class="active">Bejövő leadek</span>
+              <span>Megtekintések</span>
+              <span>Utánkövetés</span>
+              <span>Riport</span>
+            </aside>
+            <div class="shot-main">
+              <div class="shot-heading">
+                <div>
+                  <span>Mai prioritás</span>
+                  <strong>7 gyors válasz</strong>
+                </div>
+                <div>
+                  <span>Mentett idő</span>
+                  <strong>3.5 óra</strong>
+                </div>
+              </div>
+              <div class="lead-row priority">
+                <div>
+                  <strong>XIII. kerületi lakás</strong>
+                  <span>Megtekintést kér hétvégére</span>
+                </div>
+                <b>Most</b>
+              </div>
+              <div class="assistant-note">
+                <span>AI válaszjavaslat</span>
+                <p>Szia! Igen, megvan még. Péntek délután vagy szombat délelőtt lenne kényelmesebb a megtekintés?</p>
+              </div>
+              <div class="lead-row">
+                <div>
+                  <strong>Belvárosi 2 szobás</strong>
+                  <span>Elérhetőséget kér</span>
+                </div>
+                <b>16:00</b>
+              </div>
+              <div class="lead-row">
+                <div>
+                  <strong>Budai garzon</strong>
+                  <span>Utánkövetésre vár</span>
+                </div>
+                <b>Holnap</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Fő előnyök">
+        <article>
+          <span>01</span>
+          <strong>Nem marad el a gyors válasz</strong>
+          <p>Aki hamarabb válaszol, nagyobb eséllyel szerzi meg a komoly érdeklődőt. Az AI ebben ad napi versenyelőnyt.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Heti órák szabadulhatnak fel</strong>
+          <p>Válaszvázlatok, státuszok, visszahívások és utánkövetések készülnek kézi admin helyett.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Kevesebb elveszett lehetőség</strong>
+          <p>Nem a memórián múlik, hogy ki kap választ, kit kell hívni, és kinél kell újra jelentkezni.</p>
+        </article>
+      </section>
+
+      <section class="section demo-section" id="demo">
+        <div class="section-copy">
+          <p class="eyebrow">Interaktív demo</p>
+          <h2>Mutasd meg egy érdeklődő üzenetével.</h2>
+          <p>
+            A demo lényege: az ingatlanos azonnal látja, hogy nem “AI varázslatról” van szó,
+            hanem egy konkrét napi munkafolyamat gyorsításáról.
+          </p>
+        </div>
+        <div class="demo-tool">
+          <label for="leadInput">Érdeklődő üzenete</label>
+          <textarea id="leadInput" rows="5">Szia! A belvárosi 2 szobás lakás érdekelne. Megvan még? Hétvégén meg tudnám nézni?</textarea>
+          <button class="button primary full" id="generateBtn" type="button">AI válaszjavaslat készítése</button>
+          <div class="result" id="result" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section system-section" id="csomag">
+        <div class="section-copy">
+          <p class="eyebrow">Hogyan működik?</p>
+          <h2>Az első termék: Lead-to-Viewing folyamat.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span>Gyűjtés</span>
+            <h3>Leadek egy helyen</h3>
+            <p>Facebook, weboldal, e-mail vagy kézi bevitel alapján minden érdeklődő egy tiszta listába kerül.</p>
+          </article>
+          <article>
+            <span>Válasz</span>
+            <h3>AI válaszjavaslat</h3>
+            <p>Az asszisztens megírja az első választ, az ingatlanos pedig jóváhagyhatja vagy átírhatja.</p>
+          </article>
+          <article>
+            <span>Teendő</span>
+            <h3>Következő lépés</h3>
+            <p>Visszahívás, időpont, státusz és utánkövetés látszik, nem vész el a beszélgetés.</p>
+          </article>
+          <article>
+            <span>Riport</span>
+            <h3>Heti áttekintés</h3>
+            <p>Egyszerű összefoglaló arról, mennyi lead jött, kik aktívak, és mi vár még intézésre.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section offer-section" id="kinalat">
+        <div class="section-copy">
+          <p class="eyebrow">Mit nyújt?</p>
+          <h2>Nem csak egy szoftvert kapsz, hanem személyre szabott működő automatizációt.</h2>
+          <p>
+            A cél az, hogy az ingatlanosnak ne kelljen technikai részletekkel foglalkoznia.
+            Felmérem a jelenlegi leadkezelést, megmutatom, hol megy el feleslegesen idő, majd összerakom az AI folyamatot,
+            ami gyorsabb reakciót és mérhető időmegtakarítást ad.
+          </p>
+        </div>
+        <div class="offer-grid">
+          <article>
+            <span>01</span>
+            <h3>Leadkezelési audit</h3>
+            <p>Átnézzük, hol vesznek el érdeklődők, mennyi idő megy adminra, és hol adhat az AI azonnali versenyelőnyt.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>AI válaszrendszer</h3>
+            <p>Elkészülnek a magyar nyelvű válaszjavaslatok, státuszok és visszahívási teendők.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Mini CRM beállítás</h3>
+            <p>Egy tiszta, egyszerű leadlista készül, ahol látszik, ki új, kit kell hívni, és ki vár utánkövetésre.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Időnyereség mérése</h3>
+            <p>Az első hónapban figyeljük, mennyi kézi munka vált ki, és a rendszert a valós üzenetekhez igazítom.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="arak">
+        <div class="section-copy">
+          <p class="eyebrow">Kezdő ajánlat</p>
+          <h2>Egyszerű csomag az első ügyfeleknek.</h2>
+          <p>
+            Referenciaár az első bevezetéseknél. A cél egy gyors, működő első verzió,
+            ami gyorsabb válaszadást, kevesebb adminisztrációt és heti több óra felszabaduló időt adhat.
+          </p>
+        </div>
+        <div class="pricing">
+          <div class="price-line">
+            <span>Egyszeri setup</span>
+            <strong>149 000 Ft</strong>
+          </div>
+          <div class="price-line">
+            <span>Havi működtetés</span>
+            <strong>49 000 Ft / hó</strong>
+          </div>
+          <ul>
+            <li>Lead tábla vagy mini CRM</li>
+            <li>AI válaszsablonok</li>
+            <li>Visszahívási és utánkövetési teendők</li>
+            <li>Időmegtakarítási pontok feltérképezése</li>
+            <li>Első havi finomhangolás</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="calculator" aria-label="Érték kalkulátor">
+        <div class="section-copy">
+          <p class="eyebrow">Gyors kalkulátor</p>
+          <h2>Mennyit ér a gyorsabb válasz és a megspórolt idő?</h2>
+        </div>
+        <div class="calc-controls">
+          <label>
+            Havi érdeklődők
+            <input id="leads" type="number" min="1" value="40" />
+          </label>
+          <label>
+            Elvesző leadek aránya (%)
+            <input id="lostRate" type="number" min="1" max="100" value="20" />
+          </label>
+          <label>
+            Egy megmentett ügylet becsült értéke
+            <input id="dealValue" type="number" min="10000" step="10000" value="300000" />
+          </label>
+        </div>
+        <div class="calc-output">
+          <span>Becsült havi megmenthető érték</span>
+          <strong id="calcResult">2 400 000 Ft</strong>
+        </div>
+      </section>
+
+      <section class="section contact" id="kapcsolat">
+        <div class="section-copy">
+          <p class="eyebrow">Első üzenet</p>
+          <h2>Másold be ezt 10 ingatlanosnak.</h2>
+        </div>
+        <div class="script-box">
+          <p>
+            Szia! Ingatlanosoknak építek egy egyszerű AI leadkezelő rendszert, ami segít gyorsabban válaszolni
+            az érdeklődőknek, rendszerezi a leadeket, és automatikusan utánköveti azokat, akik még nem döntöttek.
+          </p>
+          <p>
+            Most az első pár ügyféllel tesztelem kedvezményes áron. Érdekelne egy 10 perces bemutató,
+            hogy megmutassam, hogyan működne ez a te hirdetéseidnél?
+          </p>
+          <button class="button secondary" id="copyBtn" type="button">Üzenet másolása</button>
+        </div>
+      </section>
+
+      <section class="section business-card-section" aria-label="Névjegy">
+        <div class="business-card">
+          <div>
+            <p class="eyebrow">Névjegy</p>
+            <h2>Reel Estate Lab</h2>
+            <p>
+              Leadkezelés, válaszjavaslatok, utánkövetés és egyszerű automatizációk azoknak az ingatlanosoknak,
+              akik gyorsabban akarnak reagálni, időt akarnak spórolni, és előnyt akarnak szerezni a piacon.
+            </p>
+          </div>
+          <div class="card-details">
+            <strong>Kovácsi Sára</strong>
+            <span>AI automatizációs partner ingatlanosoknak</span>
+            <a href="mailto:reelestatelab@gmail.com">reelestatelab@gmail.com</a>
+            <a href="tel:+36205240828">+36 20 524 0828</a>
+            <span>Budapest / online</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Reel Estate Lab</span>
+      <span>Első cél: 10 beszélgetés, 1 fizető ügyfél.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
