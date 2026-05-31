@@ -1,7 +1,6 @@
 const leadInput = document.querySelector("#leadInput");
 const generateBtn = document.querySelector("#generateBtn");
 const result = document.querySelector("#result");
-const copyBtn = document.querySelector("#copyBtn");
 const leads = document.querySelector("#leads");
 const lostRate = document.querySelector("#lostRate");
 const dealValue = document.querySelector("#dealValue");
@@ -63,21 +62,8 @@ function updateCalculator() {
   calcResult.textContent = `${formatter.format(Math.round(estimated))} Ft`;
 }
 
-async function copyScript() {
-  const text = `Szia! Ingatlanosoknak építek egy egyszerű AI leadkezelő rendszert, ami segít gyorsabban válaszolni az érdeklődőknek, rendszerezi a leadeket, és automatikusan utánköveti azokat, akik még nem döntöttek.
-
-Most az első pár ügyféllel tesztelem kedvezményes áron. Érdekelne egy 10 perces bemutató, hogy megmutassam, hogyan működne ez a te hirdetéseidnél?`;
-
-  await navigator.clipboard.writeText(text);
-  copyBtn.textContent = "Kimásolva";
-  window.setTimeout(() => {
-    copyBtn.textContent = "Üzenet másolása";
-  }, 1600);
-}
-
 generateBtn.addEventListener("click", buildResponse);
 [leads, lostRate, dealValue].forEach((input) => input.addEventListener("input", updateCalculator));
-copyBtn.addEventListener("click", copyScript);
 
 buildResponse();
 updateCalculator();
